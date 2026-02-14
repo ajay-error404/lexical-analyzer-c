@@ -82,7 +82,7 @@ void process_line(char *line, int line_number)
         if (line[i] == '}') brace_count--;
         if (line[i] == '\'')
         {
-            int start = i;
+            
             i++;
 
             if (line[i] == '\0' || line[i+1] != '\'')
@@ -125,7 +125,7 @@ void process_line(char *line, int line_number)
         // NUMBER
         if (isdigit(line[i]))
         {
-            int start = i;
+            
             char num[100]; int k = 0;
 
             while (isalnum(line[i]) || line[i]=='.')

@@ -1,10 +1,16 @@
 #include <stdio.h>
-int main()
-{
-    char ch = 'A';
-    int num1, num2;
-    printf("Enter two numbers : ");
-    scanf("%d%d", &num1, &num2);
-    int sum = num1 + num2;
-    printf("Sum = %d\n", sum);
+
+int main() {
+    // This is a single-line comment
+    int count = 0; /* Multi-line
+                      comment */
+    float pi = 3.14;
+    char grade = 'A';
+    char* message = "Hello, Lexer!";
+
+    if (count < 10) {
+        printf("%s\n", message);
+    }
+    return 0;
 }
+
